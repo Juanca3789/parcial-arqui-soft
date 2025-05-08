@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html> <!-- Abre pagina Html -->
+
+<head>
+	<!-- meta web -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:title" content="El arte te cuida, cuidemos el arte">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="es_CO">
+	<meta name="keywords"
+		content="teatro online, cuentero online, musica online, oncierto online, generar dinero con el arte, ayudar con el arte">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@artecuida2020">
+	<meta name="twitter:title" content="#artecuida2020">
+	<meta name="twitter:description" content="El arte te cuida, cuidemos el arte">
+	<meta name="twitter:image:alt" content="#artecuida2020">
+	<meta name="description"
+		content="Teatro online, cuentero online, musica online, arte online. Creemos en el valor y el poder de transformación que tiene el arte y la cultura, encontrar soluciones sostenibles y creativas para mejorar la vida de los artistas y la sociedad.">
+	<meta name="author" content="Oficina de sueños - LT">
+	<meta name="copyright" content="Oficina de sueños - LT">
+	<meta name="robots" content="all">
+
+	<!--Informacion de pestaña-->
+	<link rel="icon" type="" href=""> <!-- TODO Insertar icono -->
+	<title>Inscríbete</title>
+
+	<!-- Scripts -->
+	<!-- TODO (Faltan inclusiones de dependencias js) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<header id="header" style="text-align:left;">
+			<a href="index.php" class="logo" style="text-align:left;">Volver</a>
+		</header>
+		<!-- Nav -->
+		<!-- TODO No usado -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.php">Agenda</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://twitter.com/artecuida2020" class="icon brands fa-twitter" target="_blank"><span
+							class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/artecuida2020" class="icon brands fa-facebook-f"
+						target="_blank"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/artecuida2020" class="icon brands fa-instagram"
+						target="_blank"><span class="label">Instagram</span></a></li>
+				<li><a href="https://chat.whatsapp.com/E6bMDKhT5oSLXOFZIY0lZh" class="icon brands alt fa-whatsapp"
+						target="_blank"><span class="label">WhatsApp</span></a></li>
+			</ul>
+		</nav>
+		<!-- Main -->
+		<div id="main">
+			<!-- Post -->
+			<section class="main">
+				<header>
+					<h3 style="text-align:center;">¿Quieres hacer parte de la agenda?</h3>
+				</header>
+				<h4 style="text-align:center;">
+					Si quieres programar llena el formulario. En cuanto verifiquemos la información tu evento será
+					publicado
+				</h4>
+				<!--ojo revisar antihack -->
+				<!--<form action="assets/php/subiragenda.php" method="post" enctype="multipart/form-data" accept-charset="utf-8" name="formulario1"> -->
+				<form id="inscripcion" enctype="multipart/form-data"> <!-- TODO Reparar action -->
+					<center><img alt="" style="border:0; width:100%; max-width:618px;"
+							src="https://suenos.in/artecuida2020/formulario/imagen.jpg" /></center>
+					<div>
+						<p style="text-align:center;"><span
+								style="font-family: comic sans ms, sans-serif; font-size: 24pt;">Formulario de
+								inscripción de actividades/eventos</span></p>
+						<p style="text-align: left;">Únete a la primera plataforma virtual para visibilizar la labor de
+							artistas e instituciones latinoamericanas en tiempos de pandemia. <br />Para responder a los
+							retos actuales, somos puente y espacio de encuentro entre los artistas y la sociedad.
+							Inscribe tu actividad o evento en el formulario y forma parte de nuestra agenda. Cualquier
+							inquietud escríbenos <a href="mailto:artecuida2020@suenos.in" rel="nofollow">
+								artecuida2020@suenos.in</a><br /><span class="requerido">* Campos obligatorios</span>
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-6 col-12-small titulo">
+							<p class="titulo" style="padding:0;">
+								Práctica cultural, artística o recreativa<span class="requerido">*</span>
+							</p>
+							<span id="practica_error" class="requerido" style="display:none;">Seleccione al menos una
+								práctica</span>
+							<ul style="list-style:none">
+								<li><input type="checkbox" id="practica1" name="practica[]"
+										value="Artes plásticas y visuales">
+									<label for="practica1">Artes plásticas y visuales</label>
+								</li>
+								<li><input type="checkbox" id="practica2" name="practica[]" value="Danza">
+									<label for="practica2">Danza</label>
+								</li>
+								<li><input type="checkbox" id="practica3" name="practica[]" value="Literatura">
+									<label for="practica3">Literatura</label>
+								</li>
+								<li><input type="checkbox" id="practica4" name="practica[]" value="Música">
+									<label for="practica4">Música</label>
+								</li>
+								<li><input type="checkbox" id="practica5" name="practica[]" value="Arte dramático">
+									<label for="practica5">Arte dramático</label>
+								</li>
+								<li><input type="checkbox" id="practica6" name="practica[]" value="Audiovisuales">
+									<label for="practica6">Audiovisuales</label>
+								</li>
+								<li><input type="checkbox" id="practica7" name="practica[]" value="Gastronomía">
+									<label for="practica7">Gastronomía</label>
+								</li>
+								<li><input type="checkbox" id="practica8" name="practica[]" value="Diseño">
+									<label for="practica8">Diseño</label>
+								</li>
+								<li><input type="checkbox" id="practica9" name="practica[]"
+										value="Manualidades&#47artesanías">
+									<label for="practica9">Manualidades/artesanías</label>
+								</li>
+								<li><input type="checkbox" id="practica10" name="practica[]" value="Recreación">
+									<label for="practica10">Recreación</label>
+								</li>
+								<li><input type="checkbox" id="practica11" name="practica[]" value="Otro"
+										onclick="$('#cual').prop('value', ''); $('#cual').fadeToggle();">
+									<label for="practica11">Otro</label>
+									<input maxlength="30" size="30" type="text" id="cual" name="practica12"
+										style="display:none;" placeholder="Separe con punto y coma(;)">
+								</li>
+							</ul>
+							<p class="titulo" style="padding:0;">
+								Tipo de actividad<span class="requerido">*</span>
+							</p>
+							<span id="tip_error" class="requerido" style="display:none;">Seleccione al menos un tipo de
+								actividad</span>
+							<ul style="list-style:none">
+								<li><input type="checkbox" id="tipo_actividad1" name="tipo_actividad[]"
+										value="Formación">
+									<label for="tipo_actividad1">Formación</label>
+								</li>
+								<li><input type="checkbox" id="tipo_actividad2" name="tipo_actividad[]"
+										value="Circulación">
+									<label for="tipo_actividad2">Circulación</label>
+								</li>
+								<li><input type="checkbox" id="tipo_actividad3" name="tipo_actividad[]"
+										value="Convocatoria">
+									<label for="tipo_actividad3">Convocatoria</label>
+								</li>
+								<li><input type="checkbox" id="tipo_actividad4" name="tipo_actividad[]"
+										value="Investigación">
+									<label for="tipo_actividad4">Investigación</label>
+								</li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-small">
+							<ul style="list-style:none">
+								<li><label for="nombre_actividad" class="titulo">Nombre de la actividad<span
+											class="requerido">*</span></label>
+									<input size="30" type="text" id="nombre_actividad" name="nombre_actividad"
+										maxlength="200" style="margin-top:0;"
+										placeholder="Nombre de la presentación tal y como se publicará" required>
+								</li>
+								<li><label for="nombre_artista" class="titulo">Nombre artista/agrupación<span
+											class="requerido">*</span></label>
+									<input size="30" type="text" id="nombre_artista" name="nombre_artista"
+										maxlength="200" style="margin-top:0;"
+										placeholder="Por favor ponga el nombre para publicar" required>
+								</li>
+								<li><label for="enlace_actividad" class="col-6 col-12-small titulo">Enlace a la
+										actividad / evento<span class="requerido">*</span></label>
+									<input type="text" size="30" id="enlace_actividad" name="enlace_actividad"
+										maxlength="500" placeholder="ej: http://www.youtube.com/watch?v=rxpTjcouaeQ"
+										required>
+									<p style="font-size:12px; font-weight:normal; line-height:20px;">Al publicar el
+										enlace acepta la responsabilidad sobre la propiedad de los derechos de
+										reproducción del contenido. Es decir son suyos o tiene autorización o
+										conocimiento de que pueden publicarse libremente</p>
+								</li>
+								<li><label for="institucion_responsable">Institución responsable de la transmisión
+										digital de la actividad / evento<span class="requerido">*</span></label>
+									<input type="text" size="30" id="institucion_responsable"
+										name="institucion_responsable" maxlength="200" required>
+								</li>
+								<li><label style="margin-top:30px;" for="trata_de">Explique brevemente de que trata la
+										actividad en máximo 600 caracteres.<span class="requerido">*</span></label>
+									<textarea id="trata_de" name="trata_de" maxlength="600"
+										placeholder="Máximo 600 caracteres" rows="8"
+										style="width:100%; line-height:21px;" onkeyup="countChars(this);"
+										required></textarea><span id="cuantos_va">Van 0 de 600 máximo</span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-12" style="border-top:1px solid">
+							<p class="titulo" style="padding:0;">
+								¿Cuándo estará disponible la actividad?
+							</p>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="Disponible_permanente" name="tiempo_actividad"
+								value="Disponible permanente" onclick="
+										$('#fecha_c1').fadeOut(1000);
+										$('#fecha_c2').fadeOut(1100);
+										$('#fecha_c3').fadeOut(1200);
+										$('#cita_c1').fadeOut(1000);
+										$('#cita_c2').fadeOut(1100);
+										$('#desde').prop('value', '');
+										$('#hasta').prop('value', '');
+										$('#dias').prop('value', '');
+										$('#fecha_actividad_inscripcion').prop('value', '');
+										$('#correo_inscripcion').prop('value', '');
+										" checked>
+							<label for="Disponible_permanente">Disponible permanente</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="En_rango_tiempo" name="tiempo_actividad"
+								value="En un rango de tiempo específico" onclick="
+										$('#fecha_c1').fadeIn(600);
+										$('#fecha_c2').fadeIn(1000);
+										$('#fecha_c3').fadeIn(1400);
+										$('#cita_c1').hide();
+										$('#cita_c2').hide();
+										$('#desde').prop('value', '');
+										$('#hasta').prop('value', '');
+										$('#dias').prop('value', '');
+										$('#fecha_actividad_inscripcion').prop('value', '');
+										$('#correo_inscripcion').prop('value', '');
+										">
+							<label for="En_rango_tiempo">En un rango de tiempo específico</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="Con_previa_inscripción" name="tiempo_actividad"
+								value="Con previa inscripción" onclick="
+										$('#fecha_c1').hide();
+										$('#fecha_c2').hide();
+										$('#fecha_c2').required='false';
+										$('#fecha_c3').hide();
+										$('#fecha_c3').required='false';
+										$('#cita_c1').fadeIn(800);
+										$('#cita_c2').fadeIn(1200);
+										$('#desde').prop('value', '');
+										$('#hasta').prop('value', '');
+										$('#dias').prop('value', '');
+										$('#fecha_actividad_inscripcion').prop('value', '');
+										$('#correo_inscripcion').prop('value', '');
+										">
+							<label for="Con_previa_inscripción">Con previa inscripción</label>
+						</div>
+
+						<div id="fecha_c1" class="col-4 col-12-small" style="display:none; margin-top:40px;">
+							<label for="desde">Fecha inicial<span class="requerido">*</span></label>
+							<input type="date" id="desde" name="desde" onchange="$('#hasta').prop('value', $('#desde').prop('value'));
+										$('#hasta').prop('min', $('#desde').prop('value'));">
+
+							<label for="tdesde">Hora inicial<span class="requerido">*</span></label>
+							<input type="time" id="tdesde" name="tdesde">
+
+
+						</div>
+
+						<div id="fecha_c2" class="col-4 col-12-small" style="display:none; margin-top:40px;">
+							<label for="hasta">Fecha final<span class="requerido">*</span></label>
+							<input type="date" id="hasta" name="hasta">
+
+							<label for="thasta">Hora final<span class="requerido">*</span></label>
+							<input type="time" id="thasta" name="thasta">
+						</div>
+
+						<div id="fecha_c3" class="col-4 col-12-small" style="display:none;">
+							<label for="dias">En estos días<span class="requerido">*</span></label>
+							<ul style="list-style:none">
+								<li><input type="checkbox" id="Lunes" name="dias[]" value="Lunes" checked>
+									<label for="Lunes">Lunes</label>
+								</li>
+								<li><input type="checkbox" id="Martes" name="dias[]" value="Martes" checked>
+									<label for="Martes">Martes</label>
+								</li>
+								<li><input type="checkbox" id="Miércoles" name="dias[]" value="Miércoles" checked>
+									<label for="Miércoles">Miércoles</label>
+								</li>
+								<li><input type="checkbox" id="Jueves" name="dias[]" value="Jueves" checked>
+									<label for="Jueves">Jueves</label>
+								</li>
+								<li><input type="checkbox" id="Viernes" name="dias[]" value="Viernes" checked>
+									<label for="Viernes">Viernes</label>
+								</li>
+								<li><input type="checkbox" id="Sábado" name="dias[]" value="Sábado" checked>
+									<label for="Sábado">Sábado</label>
+								</li>
+								<li><input type="checkbox" id="Domingo" name="dias[]" value="Domingo" checked>
+									<label for="Domingo">Domingo</label>
+								</li>
+							</ul>
+						</div>
+
+						<div id="cita_c1" class="col-6 col-12-small" style="display:none;">
+							<label for="fecha_actividad_inscripcion">Fecha de la actividad<span
+									class="requerido">*</span></label>
+							<input type="date" id="fecha_actividad_inscripcion" name="fecha_actividad_inscripcion">
+
+							<label for="tfecha_actividad_inscripcion">Hora de la actividad<span
+									class="requerido">*</span></label>
+							<input type="time" id="tfecha_actividad_inscripcion" name="tfecha_actividad_inscripcion">
+						</div>
+
+						<div id="cita_c2" class="col-6 col-12-small" style="display:none;">
+							<label for="correo_inscripcion">Url, correo o teléfono de inscripción<span
+									class="requerido">*</span></label>
+							<input type="text" size="30" maxlength="200" id="correo_inscripcion"
+								name="correo_inscripcion">
+						</div>
+
+						<div class="col-12" style="border-top:1px solid; margin-top:50px;">
+						</div>
+
+						<div class="col-6 col-12-small">
+							<ul style="list-style:none">
+								<li><label for="duracion" class="titulo">Duración de la actividad / evento en
+										minutos<span class="requerido">*</span></label>
+									<span id="muestre_duracion">10 minutos</span>
+									<input type="range" id="duracion" name="duracion"
+										style="margin-top:0; border:1px solid; width:90%" min="10" max="180" value="10"
+										step="10"
+										onchange="document.getElementById('muestre_duracion').innerHTML=this.value + ' minutos';">
+								</li>
+
+								<li><label for="nacionalidad" class="titulo">Nacionalidad del artista o de la
+										agrupación<span class="requerido">*</span></label>
+									<input size="30" type="text" id="nacionalidad" name="nacionalidad" maxlength="200"
+										style="margin-top:0;" required>
+								</li>
+								<li><label for="pais_transmision" class="titulo">País sede de la institución desde donde
+										se transmite la actividad o el evento</label>
+									<input size="30" type="text" id="pais_transmision" name="pais_transmision"
+										maxlength="200">
+								</li>
+								<li><label for="sitio_web" class="titulo">Web del artista / agrupación /
+										institución<span class="requerido">*</span></label>
+									<input size="30" maxlength="500" type="text" id="sitio_web" name="sitio_web"
+										style="margin-top:0;" required>
+								</li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-small">
+							<span><strong>Redes sociales</strong></span>
+							<ul style="list-style:none">
+								<li><label for="facebook" class="titulo">Facebook</label>
+									<input size="30" maxlength="200" type="text" id="facebook" name="facebook"
+										style="margin-top:0;">
+								</li>
+								<li><label for="twitter" class="titulo">Twitter</label>
+									<input size="30" maxlength="200" type="text" id="twitter" name="twitter"
+										style="margin-top:0;">
+								</li>
+								<li><label for="instagram" class="titulo">Instagram</label>
+									<input size="30" maxlength="200" type="text" id="instagram" name="instagram"
+										style="margin-top:0;">
+								</li>
+								<li><label for="youtube" class="titulo">YouTube</label>
+									<input size="30" maxlength="200" type="text" id="youtube" name="youtube"
+										style="margin-top:0;">
+								</li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-small">
+							<span><strong>Público</strong></span>
+							<ul style="list-style:none">
+								<li>
+									<input type="radio" id="Familiar" name="publico" value="Familiar"
+										onclick="$('#cual2').fadeOut();" checked>
+									<label for="Familiar">Familiar</label>
+								</li>
+								<li>
+									<input type="radio" id="Adultos" name="publico" value="Adultos"
+										onclick="$('#cual2').fadeOut();">
+									<label for="Adultos">Adultos</label>
+								</li>
+								<li>
+									<input type="radio" id="otro2" name="publico" value="Otro"
+										onclick="$('#cual2').prop('value', ''); $('#cual2').fadeToggle();">
+									<label for="otro2">Otro</label>
+									<input maxlength="30" size="35" type="text" id="cual2" name="publico2"
+										placeholder="Separe con punto y coma(;)" style="display:none;">
+								</li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-small">
+							<label for="subir_archivo" class="titulo">Imagen para promocionar la actividad<span
+									class="requerido">*</span></label>
+							<input id="subir_archivo" name="subir_archivo" type="file" accept="image" required>
+						</div>
+						<div class="col-12" style="border-top:1px solid;">
+							<span><strong>Datos de quien registra la actividad</strong></span>
+							<ul style="list-style:none">
+								<li>
+									<label for="nombre_apellido" class="titulo">Nombres y apellidos<span
+											class="requerido">*</span></label>
+									<input size="30" type="text" id="nombre_apellido" name="nombre_apellido"
+										maxlength="200" style="margin-top:0;" required>
+
+								</li>
+								<li>
+									<label for="mail" class="titulo">Correo Electrónico<span
+											class="requerido">*</span></label>
+									<input size="30" type="email" id="mail" name="mail" maxlength="200"
+										style="margin-top:0;" required>
+
+								</li>
+								<li>
+									<label for="institucion" class="titulo">Institución Organización (si aplica)</label>
+									<input size="30" type="text" id="institucion" name="institucion" maxlength="200">
+
+								</li>
+							</ul>
+						</div>
+						<div id="desea_publicar" class="col-12" style="border-top:1px solid; display:none;">
+							<span><strong>¿Desea Publicar?</strong></span>
+							<ul style="list-style:none">
+								<li>
+									<input type="radio" id="si" name="publicar" value="Si">
+									<label for="si">Si</label>
+								</li>
+								<li>
+									<input type="radio" id="no" name="publicar" value="No" checked>
+									<label for="no">No</label>
+								</li>
+							</ul>
+						</div>
+						<div id="desea_publicar2" class="col-12">
+							<p style="text-align:center;"><span class="button large" onclick="test()">Enviar</span></p>
+							<input id="boton_enviar" type="submit" class="button large" value="Enviar" style="display:none;">
+						</div>
+					</div>
+					<!-- Break -->
+				</form>
+			</section>
+		</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>¿Tienes un comentario? <br />
+					no dudes en dejarnos saberlo
+				</h2>
+
+				<form method="post" action="https://api.whatsapp.com/send?phone=numero&text=mensaje">
+					<div class="fields">
+						<div class="field">
+							<label for="name">Nombre</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="telefono_cel">Número celular</label>
+							<input type="text" name="celular" id="celular" />
+						</div>
+						<div class="field">
+							<label for="message">Mensaje</label>
+							<textarea name="mensaje" id="mensaje" rows="3"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Enviar Mensaje"></li>
+					</ul>
+				</form>
+
+			</section>
+			<section class="split contact">
+				<section>
+					<h3>Teléfono</h3>
+					<p><a name="teléfono">+57 300-8615056</a></p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a name="correo">artecuida2020@suenos.in</a></p>
+				</section>
+				<section>
+					<h3>Contactar WhatsApp</h3>
+					<p><a href="https://chat.whatsapp.com/E6bMDKhT5oSLXOFZIY0lZh"><img src="" alt="whatsapp"
+								height="50px" width="50px" /></a>
+					</p>
+				</section>
+				<section>
+					<h3>Siguenos en Redes</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.twitter.com/artecuida2020" class="icon brands alt fa-twitter"
+								target="_blank"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/artecuida2020" class="icon brands alt fa-facebook-f"
+								target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/artecuida2020" class="icon brands alt fa-instagram"
+								target="_blank"><span class="label">Instagram</span></a></li>
+						<li><a href="https://chat.whatsapp.com/E6bMDKhT5oSLXOFZIY0lZh"
+								class="icon brands alt fa-whatsapp" target="_blank"><span
+									class="label">WhatsApp</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; @artecuida2020</li>
+				<li>Design: <span>oficina de suenos/LT</span></li>
+			</ul>
+		</div>
+
+	</div>
+	<script src="./functions.js"></script>
+</body>
+
+</html>
