@@ -18,7 +18,14 @@ async function sendformquery(){
             }
         )
         json = await resp.json()
-        console.log(json)
+        if (json.success) {
+            window.alert("✅ Éxito:", json.success);
+            window.location.reload();
+        } else if (json.error) {
+            window.alert("❌ Error:", json.error, "\nRevisa la información y vuelve a intentarlo");
+        } else {
+            window.alert("⚠ Respuesta inesperada:", json);
+        }
     } catch (error) {
         console.log(error)
     }
